@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-image: url("https://i.pinimg.com/736x/f3/d1/ba/f3d1ba7b073d2005adc1b81a35b456a6.jpg");
+        background-size: contain;
+        background-position: center;
+        overflow: hidden; /* Prevent scrollbars */
+      }
+
+      .container {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        position: relative; /* Allows for absolute positioning of the leaf */
+      }
+
+      .leaf-message {
+        font-size: 1.8em;
+        color: #228b22; /* Forest Green */
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .floating-leaf {
+        width: 100px; /* Increased size for better visibility */
+        height: 100px;
+        /* Use a more generic leaf image or a placeholder */
+        background-image: url('patta.png'); /* Replace with actual leaf image URL */
+        background-size: cover;
+        border-radius: 50%;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        animation: floatAndRotate 6s infinite linear; /* Combined animation */
+      }
+
+      @keyframes floatAndRotate {
+        0%, 100% {
+          top: 10%;
+          left: 10%;
+          transform: rotate(0deg) translate(0, 0);
+        }
+        25% {
+          top: 20%;
+          left: 80%;
+          transform: rotate(90deg) translate(10px, -20px);
+        }
+        50% {
+          top: 70%;
+          left: 70%;
+          transform: rotate(180deg) translate(0, 20px);
+        }
+        75% {
+          top: 60%;
+          left: 20%;
+          transform: rotate(270deg) translate(-10px, 0);
+        }
+      }
+      .home-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .home-link a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="home-link">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="container">
+        <p class="leaf-message">
+            YELE TERA PATTA BHUT DHUNDKE LAYA HUN
+        </p>
+        <div class="floating-leaf"></div>
+    </div>
+</body>
+</html>

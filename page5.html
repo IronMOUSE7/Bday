@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-image: url("https://i.pinimg.com/736x/65/8e/68/658e6807737518bd1513a9589631c130.jpg");
+            background-size: contain;
+            background-position: center;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .final-meme img {
+            max-width: 500px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .thank-you-text {
+            font-size: 2em;
+            color: #3cb371;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .floating-leaf {
+            width: 50px;
+            height: 50px;
+            background-image: url('[Link to Leaf Image or Placeholder]');
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            animation: float 5s linear infinite, rotate 3s linear infinite;
+        }
+
+        @keyframes float {
+            0% { top: 10%; left: 10%; transform: translateY(0); }
+            25% { top: 20%; left: 80%; transform: translateY(-20px); }
+            50% { top: 70%; left: 70%; transform: translateY(0); }
+            75% { top: 60%; left: 20%; transform: translateY(20px); }
+            100% { top: 10%; left: 10%; transform: translateY(0); }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .home-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .home-link a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .final-fr-button { /* Added style for the new button */
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff4500;  /* OrangeRed */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .final-fr-button:hover {
+            background-color: #b22222;  /* Firebrick */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="home-link">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="final-meme">
+            <img src="[Link to Seventeen Meme 2]" alt="Seventeen Thank You Meme">
+        </div>
+        <div class="thank-you-text">
+            THANKUYOUUU FOR BEING THERE FOR ME KRTYAKA
+        </div>
+        <a href="page6.html" class="final-fr-button">FINAL FR FR</a>
+    </div>
+    <div class="floating-leaf"></div>
+</body>
+</html>

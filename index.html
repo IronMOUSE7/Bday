@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Krtyaka</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            /* background-color: #f0f8ff;  Light blue background */
+            background-image: url("https://i.pinimg.com/736x/f0/04/b6/f004b6bebf1e3ade42a1444687c7f642.jpg"); /* Set the background image */
+            background-size: cover; /* Make it cover the whole page */
+            background-position: top; /* Center the image */
+        }
+
+        .touch-me-container {
+            text-align: center;
+            /* Removed background-color from here */
+        }
+
+        .profile-image {
+            /* width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px; */
+            display: none; /* remove the profile image*/
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .next-page-button { /* General style for all next page buttons */
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff69b4; /* Pink button */
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 20px; /* Add margin above the button */
+        }
+
+        .next-page-button:hover {
+            background-color: #d14785;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="touch-me-container">
+        <div class="touch-me-link">
+            <a href="page2.html" class="next-page-button">TOUCH ME</a>
+        </div>
+    </div>
+</body>
+</html>
